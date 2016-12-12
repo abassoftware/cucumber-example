@@ -1,0 +1,24 @@
+plugins {
+  id "java"
+  id "eclipse"
+}
+
+repositories {
+  mavenCentral()
+  maven { 
+	credentials {
+		username nexus3User
+		password nexus3Password
+	}
+	url abasNexus3SnapshotURL
+  }
+}
+
+dependencies {
+  testCompile 'junit:junit:4.11'
+  testCompile 'info.cukes:cucumber-java:1.2.4'
+  testCompile 'info.cukes:cucumber-junit:1.2.4'
+  testCompile 'info.cukes:cucumber-picocontainer:1.2.4'
+  testCompile 'de.abas.erp:jedp:2017.200.0-SNAPSHOT'
+  testCompile 'de.abas.tools:cucumber:0.0.1-SNAPSHOT'
+}
