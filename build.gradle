@@ -7,10 +7,10 @@ repositories {
   mavenCentral()
   maven { 
 	credentials {
-		username nexus3User
-		password nexus3Password
+		username nexusUser
+		password nexusPassword
 	}
-	url abasNexus3SnapshotURL
+	url nexusSnapshotURL
   }
 }
 
