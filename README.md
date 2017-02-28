@@ -20,9 +20,9 @@ https.proxyPort=8000
 
 org.gradle.daemon=true
 
-abasNexus3SnapshotURL=https://nexus3.abas-usa.com:8443/repository/abas.snapshots
-nexus3User=<NexusUsername>
-nexus3Password=<NexusPassword>
+nexusSnapshotURL=https://nexus3.abas-usa.com:8443/repository/abas.snapshots
+nexusUser=<NexusUsername>
+nexusPassword=<NexusPassword>
 
 ```
 Nutzernamen und Passwort sind die extranet-Logins.
